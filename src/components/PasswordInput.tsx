@@ -19,7 +19,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ onSubmit }) => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Écrivez votre MDP"
+                placeholder="Écrivez votre mot de passe"
             />
             <button type="submit">Envoyer</button>
         </form>

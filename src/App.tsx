@@ -3,7 +3,8 @@ import PasswordInput from './components/PasswordInput';
 import JournalEntryForm from './components/JournalEntryForm';
 import JournalList from './components/JournalList';
 import CryptoJS from 'crypto-js';
-import './App.css'
+import './App.css';
+import logo from './logo-ecv.png';
 
 interface Entry {
     id: string;
@@ -76,6 +77,11 @@ const App: React.FC = () => {
 
     return (
         <div className='container'>
+            <div className="container_name">
+                <p className='name'>Jason MENNECHET<br />M2 DEV</p>
+                <img src={logo} alt="Logo" className='logo'/>
+            </div>
+            
             <h1>Journal encrypté</h1>
             <PasswordInput onSubmit={setPassword} />
             <JournalEntryForm onAddEntry={handleAddEntry} password={password} />
@@ -84,7 +90,7 @@ const App: React.FC = () => {
                 onDelete={handleDeleteEntry}
                 onUpdate={handleUpdateEntry}
                 onRead={handleReadEntry}
-                password={password} // Passer le mot de passe pour les actions
+                password={password} // passer le mot de passe pour les actions
             />
             {/* Section pour confirmer le mot de passe avant de lire le contenu */}
             {currentEntry && (

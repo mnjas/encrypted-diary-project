@@ -20,7 +20,7 @@ const JournalEntry: React.FC<JournalEntryProps> = ({ content, password }) => {
 
     return (
         <div>
-            <button onClick={decryptContent}>Décripter</button>
+            <button onClick={decryptContent}>Décrypter</button>
             {decryptedContent && <p>{decryptedContent}</p>}
         </div>
     );

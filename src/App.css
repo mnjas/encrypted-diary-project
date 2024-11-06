@@ -10,6 +10,21 @@ body {
     height: 100vh;
 }
 
+.container_name{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.logo{
+    height: 40px;
+    width: 140px;
+}
+
 h1 {
     text-align: center;
     color: #4a90e2;

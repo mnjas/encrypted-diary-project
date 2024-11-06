@@ -48,7 +48,7 @@ const JournalList: React.FC<JournalListProps> = ({ entries, onDelete, onUpdate, 
                             onChange={(e) => setEditingContent(e.target.value)}
                         />
                     ) : (
-                        <button onClick={() => onRead(entry)}>Lire</button> // Passer l'entrée complète ici
+                        <button onClick={() => onRead(entry)}>Lire</button> // passer l'entrée complète ici
                     )}
                     {editingId === entry.id ? (
                         <button onClick={() => handleSaveClick(entry.id)}>Sauvegarder</button>
