@@ -8,7 +8,7 @@ describe('App', () => {
         render(<App />);
 
         // ajout d'une entrée
-        const passwordInput = screen.getByPlaceholderText('Écrivez votre MDP');
+        const passwordInput = screen.getByPlaceholderText('Écrivez votre mot de passe');
         fireEvent.change(passwordInput, { target: { value: 'test-password' } });
         fireEvent.click(screen.getByText('Envoyer'));
 

@@ -1,4 +1,4 @@
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
     color: #333;
@@ -25,27 +25,27 @@ body {
     width: 140px;
 }
 
-h1 {
+h1{
     text-align: center;
     color: #4a90e2;
 }
 
-.container {
+.container{
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 450px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 input[type="password"],
-textarea {
+textarea{
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -53,7 +53,12 @@ textarea {
     resize: none;
 }
 
-button {
+/* .editContent{
+    display: flex;
+    gap: 5px;
+} */
+
+button{
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -64,21 +69,21 @@ button {
     transition: background-color 0.3s;
 }
 
-button:disabled {
+button:disabled{
     background-color: #ccc;
     cursor: not-allowed;
 }
 
-button:hover:not(:disabled) {
+button:hover:not(:disabled){
     background-color: #357ABD;
 }
 
-ul {
+ul{
     list-style-type: none;
     padding: 0;
 }
 
-li {
+li{
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     padding: 10px;
@@ -89,12 +94,12 @@ li {
     align-items: center;
 }
 
-li span {
+li span{
     cursor: pointer;
     color: #4a90e2;
 }
 
-li button {
+li button{
     background-color: transparent;
     color: #4a90e2;
     border: none;
@@ -104,6 +109,6 @@ li button {
     transition: color 0.3s;
 }
 
-li button:hover {
+li button:hover{
     color: white;
 }

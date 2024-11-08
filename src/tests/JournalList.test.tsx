@@ -21,9 +21,8 @@ test('displays entries and triggers onRead, onUpdate, onDelete actions', () => {
     />
   );
 
-  // Simuler un clic sur "Lire" pour l'entrée avec id "1"
+  // simule un clic sur "Lire" pour le message avec id "1"
   fireEvent.click(screen.getAllByText('Lire')[0]);
 
-  // Adapter ici pour tester que `onRead` reçoit l'objet complet
   expect(mockOnRead).toHaveBeenCalledWith(entries[0]); // au lieu de 1
 });
