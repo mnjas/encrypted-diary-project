@@ -8,7 +8,7 @@ describe('PasswordInput', () => {
         const mockSubmit = jest.fn();
         render(<PasswordInput onSubmit={mockSubmit} />);
 
-        const input = screen.getByPlaceholderText('Écrivez votre MDP');
+        const input = screen.getByPlaceholderText('Écrivez votre mot de passe');
         const submitButton = screen.getByText('Envoyer');
 
         fireEvent.change(input, { target: { value: 'test-password' } });
